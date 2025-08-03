@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Grupo Mariscala · Comunidad</title>
+  <title>Grupo Mariscala · gMa</title>
   <style>
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-color: #ffffff;
-      color: #1b1b1b;
+      background: linear-gradient(to bottom, #fdf6ec 0%, #e9ecef 100%);
+      color: #1a1a1a;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
@@ -17,7 +17,7 @@
       overflow-x: hidden;
     }
 
-    /* Fondo sutil con imagen */
+    /* Fondo sutil con imagen tipo marca de agua */
     body::before {
       content: "";
       position: fixed;
@@ -25,33 +25,34 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background-image: url('tu-imagen.jpg'); /* Reemplaza por tu imagen */
+      background-image: url('tu-imagen.jpg'); /* Cambia aquí por tu imagen */
       background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      opacity: 0.07;
+      background-position: center;
+      background-size: 60%;
+      opacity: 0.05;
       z-index: -1;
       pointer-events: none;
     }
 
     header {
-      background-color: #001f3f;
-      color: white;
+      background-color: #003049;
+      color: #fff;
       padding: 3rem 1rem;
       text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       margin-bottom: 0.3rem;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
     }
 
     header p {
       font-size: 1.1rem;
-      color: #d9d9d9;
-      margin: 0;
+      color: #f0e5c9;
       font-style: italic;
+      margin: 0;
     }
 
     main {
@@ -63,26 +64,36 @@
     }
 
     .mensaje {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-style: italic;
       margin-bottom: 2.5rem;
-      color: #444;
-      line-height: 1.6;
+      color: #333;
+      line-height: 1.7;
+      background-color: #ffffffd9;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    }
+
+    .mensaje strong {
+      color: #b58900;
     }
 
     .email {
       font-size: 1.5rem;
       font-weight: bold;
-      color: #c2a95d;
+      color: #9d6f19;
       word-break: break-word;
+      margin-top: 1rem;
     }
 
     footer {
-      background-color: #f1f1f1;
-      color: #777;
+      background-color: #f0f0f0;
+      color: #666;
       padding: 1rem;
       font-size: 0.9rem;
       text-align: center;
+      border-top: 1px solid #ccc;
     }
   </style>
 </head>
@@ -94,10 +105,10 @@
   </header>
 
   <main>
-    <p class="mensaje">
+    <div class="mensaje">
       En <strong>gMa</strong> creemos que cada paso compartido siembra prosperidad.<br />
-      Somos una comunidad en construcción constante, donde la unión hace la fuerza.
-    </p>
+      Somos una comunidad viva, en donde la unión multiplica el bienestar.
+    </div>
     <p class="email">614tt15441@protonmail.com</p>
   </main>
 
